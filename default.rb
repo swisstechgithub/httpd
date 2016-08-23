@@ -13,6 +13,6 @@ if not File.exist?("/etc/init.d/httpd")
 	end
 
 	service "hhtpd" do
-		[ action :enable, :start ]
+		action [ :enable, :start ]
 	end
 end
